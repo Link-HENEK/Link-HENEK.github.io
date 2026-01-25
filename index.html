@@ -1,98 +1,192 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Mr. Dev — Développeur</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-:root {
---lavender-100: #f5f2fa;
---lavender-200: #e6def2;
---lavender-300: #cbbfe8;
---lavender-500: #8f7ccf;
---lavender-700: #5a4a9c;
---text-main: #2f2a3a;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mr. Dev — Développeur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --lavender-100: #f5f2fa;
+      --lavender-200: #e6def2;
+      --lavender-300: #cbbfe8;
+      --lavender-500: #8f7ccf;
+      --lavender-700: #5a4a9c;
+      --text-main: #2f2a3a;
+    }
 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      background: linear-gradient(180deg, var(--lavender-100), #ffffff);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
 
+    header {
+      padding: 4rem 2rem 3rem;
+      text-align: center;
+    }
 
-body {
-font-family: "Inter", system-ui, sans-serif;
-background: linear-gradient(180deg, var(--lavender-100), #ffffff);
-color: var(--text-main);
-line-height: 1.6;
-}
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: var(--lavender-700);
+      margin-bottom: 0.5rem;
+    }
 
+    header p {
+      font-size: 1.2rem;
+      color: #5c5670;
+    }
 
-header {
-padding: 4rem 2rem 3rem;
-text-align: center;
-}
+    nav {
+      margin-top: 2rem;
+    }
 
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--lavender-500);
+      font-weight: 500;
+    }
 
-header h1 {
-font-size: 2.8rem;
-font-weight: 700;
-color: var(--lavender-700);
-margin-bottom: 0.5rem;
-}
+    nav a:hover {
+      text-decoration: underline;
+    }
 
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: grid;
+      gap: 3rem;
+    }
 
-header p {
-font-size: 1.2rem;
-color: #5c5670;
-}
+    section {
+      background: white;
+      border-radius: 16px;
+      padding: 2rem 2.5rem;
+      box-shadow: 0 10px 25px rgba(90, 74, 156, 0.08);
+    }
 
+    section h2 {
+      font-size: 1.8rem;
+      color: var(--lavender-700);
+      margin-bottom: 1rem;
+    }
 
-nav {
-margin-top: 2rem;
-}
+    .about p {
+      font-size: 1.05rem;
+    }
 
+    .skills ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.8rem;
+      list-style: none;
+      margin-top: 1rem;
+    }
 
-nav a {
-margin: 0 1rem;
-text-decoration: none;
-color: var(--lavender-500);
-font-weight: 500;
-}
+    .skills li {
+      background: var(--lavender-100);
+      padding: 0.6rem 0.8rem;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: 500;
+    }
 
+    .contact {
+      text-align: center;
+    }
 
-nav a:hover {
-text-decoration: underline;
-}
+    .contact a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.4rem;
+      border-radius: 999px;
+      background: var(--lavender-500);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
 
+    .contact a:hover {
+      background: var(--lavender-700);
+    }
 
-main {
-max-width: 900px;
-margin: 0 auto;
-padding: 2rem;
-display: grid;
-gap: 3rem;
-}
+    footer {
+      margin-top: 4rem;
+      padding: 2rem;
+      text-align: center;
+      color: #7a7390;
+      font-size: 0.9rem;
+    }
 
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
 
-section {
-background: white;
-border-radius: 16px;
-padding: 2rem 2.5rem;
-box-shadow: 0 10px 25px rgba(90, 74, 156, 0.08);
-}
+      section {
+        padding: 1.5rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
 
+  <header>
+    <h1>Mr. Dev</h1>
+    <p>Développeur — Création de solutions web élégantes</p>
+    <nav>
+      <a href="#about">À propos</a>
+      <a href="#skills">Compétences</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-section h2 {
-font-size: 1.8rem;
-color: var(--lavender-700);
-margin-bottom: 1rem;
-}
+  <main>
+    <section id="about" class="about">
+      <h2>À propos</h2>
+      <p>
+        Je suis développeur passionné par la création d'interfaces simples,
+        élégantes et efficaces. J'aime concevoir des sites clairs, performants
+        et agréables à utiliser, en mettant l'accent sur la qualité du code
+        et l'expérience utilisateur.
+      </p>
+    </section>
 
+    <section id="skills" class="skills">
+      <h2>Compétences</h2>
+      <ul>
+        <li>HTML / CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Git & GitHub</li>
+        <li>UI / UX</li>
+        <li>Responsive Design</li>
+      </ul>
+    </section>
 
-.about p {
-font-size: 1.05rem;
+    <section id="contact" class="contact">
+      <h2>Me contacter</h2>
+      <p>
+        Tu peux me contacter par email pour toute collaboration ou projet.
+      </p>
+      <a href="mailto:contact@example.com">M'écrire</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 — Mr. Dev. Tous droits réservés.
+  </footer>
+
+</body>
 </html>
