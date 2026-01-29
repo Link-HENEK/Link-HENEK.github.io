@@ -4,3 +4,18 @@
     padding-left:8px;
     padding-right: 8px;
 }
+
+#img{
+    margin-left: auto;
+    max-width: 7em;
+    border-radius: 20px;
+}
+
+#divPres{
+    display: grid;
+    grid-template-columns: 
+        minmax(20em,2fr)
+        minmax(20em,1fr)
+        minmax(10em, 1fr)
+    ;
+}

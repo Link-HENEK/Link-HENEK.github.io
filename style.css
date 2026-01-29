@@ -217,6 +217,10 @@ section h3 {
     background: var(--lavender-700);
 }
 
+.d-block{
+    display: block;
+}
+
 footer {
     margin-top: 4rem;
     padding: 2rem;
