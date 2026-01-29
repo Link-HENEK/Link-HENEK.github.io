@@ -3,6 +3,7 @@
     padding:5px;
     padding-left:8px;
     padding-right: 8px;
+    text-decoration: none;
 }
 
 #img{
@@ -17,5 +18,14 @@
         minmax(20em,2fr)
         minmax(20em,1fr)
         minmax(10em, 1fr)
+    ;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 
+        minmax(20em, 1fr)
+        minmax(40em, 2fr)
+        minmax(10em, 2fr)
     ;
 }
