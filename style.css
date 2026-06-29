@@ -87,7 +87,7 @@ header {
 
 }
 
-.profile-picture {
+#profile-picture {
 
     width: 250px;
 
@@ -188,7 +188,7 @@ h2 {
 
 }
 
-.section {
+section {
 
     padding: 80px 0;
 
