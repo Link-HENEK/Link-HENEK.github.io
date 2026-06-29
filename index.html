@@ -1,396 +1,212 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>- Link HENEK -</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./id.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Développeur Full Stack</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <a id="cv" target="_blank" href="CurriculumVitae/Link-HENEK_CurriculumVitae.pdf" download=""><h1>Link HENEK</h1></a>
-    <div class="nav">
-        <a id="cv" target="_blank" href="CurriculumVitae/Link-HENEK_CurriculumVitae.pdf" download="">CV</a>
-        <div>
-            <a href="#presentation">Présentation</a>
-            <a href="#parcours">Parcours</a>
-            <a href="#competences">Compétences</a>
-            <a href="#outils">Outils</a>
-            <a href="#projets">Projets</a>
-            <a href="#contacts">Contacts</a>
-        </div>        
-    </div> 
-  </header>
+<header>
 
-  <main>
-    <section id="presentation" class="presentation">
-        <span>Présentation</span>
-        <div id="divPres">
-          <div class="d-block">
-            <h2>Link HENEK</h2>
+    <div class="container navbar">
+
+        <h2>John Doe</h2>
+
+        <a class="btn" href="CV.pdf" download>
+            Télécharger mon CV
+        </a>
+
+    </div>
+
+</header>
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <img src="Photo.jpg" alt="Photo de profil" class="profile-picture">
+
+        <div class="hero-text">
+
+            <span class="subtitle">Développeur Full Stack .NET</span>
+
+            <h1>Bonjour, je suis John Doe.</h1>
+
             <p>
-            Je suis développeur passionné par la création d'interfaces simples,
-            élégantes et efficaces. J'aime concevoir des sites clairs, performants
-            et agréables à utiliser, en mettant l'accent sur la qualité du code
-            et l'expérience utilisateur.
+                Passionné par le développement d'applications modernes,
+                j'aime concevoir des logiciels robustes, maintenables et
+                agréables à utiliser. Cette page vous permettra d'en apprendre
+                davantage que ce que peut contenir un CV.
             </p>
-          </div>
-          <div></div>
-          <img id="img" src="CV.jpg"/>
+
+            <div class="hero-buttons">
+
+                <a class="btn" href="#contact">
+                    Me contacter
+                </a>
+
+                <a class="btn-secondary" href="#">
+                    GitHub
+                </a>
+
+                <a class="btn-secondary" href="#">
+                    LinkedIn
+                </a>
+
+            </div>
+
         </div>
-        
-        
-    </section>
 
-    <section id="parcours">
-        <span>Parcours</span>
-        <div>
-            <section id="p_academique">
-                <h3>Académique</h3>
-                <ul class="ul_parcours">
-                  <li>
-                    <h4>BUT Informatique - IUT Rangueil Toulouse</h4>
-                    <p>
-                      Spécialisé en <strong>Déploiement d'applications communicantes et sécurisées</strong>
-                    </p>
-                  </li>
-                  <li>
-                    <h4>Baccalauréat scientifique - Lycée Pierre Paul Riquet</h4>
-                    <p>
-                      <strong>Mathématiques & Sciences de l'Ingénieur</strong>
-                    </p>
-                  </li>
-                </ul>
-            </section>
-            <section id="p_professionnel">
-                <h3>Professionnel</h3>
-                <ul class="ul_parcours">
-                  <li>
-                    <h4>Alternance - Délégation régionale du CNRS (Toulouse)</h4>
-                    <p>
-                      Prise en main <strong>complète</strong> d'une application.
-                    </p>
-                  </li>
-                  <li>
-                    <h4>Stage - Délégation régionale du CNRS (Toulouse)</h4>
-                    <p>
-                      <strong>Compréhension</strong> & <strong>amélioration</strong> d'une application existante.
-                    </p>
-                  </li>
-                </ul>
-            </section>
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <h2>Mon parcours</h2>
+
+        <div class="timeline">
+
+            <div class="card">
+                <h3>Développeur Full Stack</h3>
+                <span>2024 - Aujourd'hui</span>
+
+                <p>
+                    Développement d'applications web, conception
+                    d'architectures logicielles, APIs REST,
+                    CI/CD et optimisation des performances.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Études d'ingénieur</h3>
+
+                <span>EPSI</span>
+
+                <p>
+                    Formation orientée développement logiciel,
+                    architecture, cloud et DevOps.
+                </p>
+
+            </div>
+
         </div>
-        
-    </section>
 
-    <section id="competences" class="skills">
-        <span>Compétences</span>
-        <ul>
-            <li class="skill">
-              <a href="#projets" class="skill-btn">
-                <h2>Réaliser</h2>
-                <ul class="levels">
-                  <li>
-                    <h3>Niveau 1 :</h3>
-                    <p>
-                      Développer des applications informatiques simples.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>Niveau 2 :</h3>
-                    <p>
-                      Partir des exigences et aller jusqu'à une application complète.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>Niveau 3 :</h3>
-                    <p>
-                      Adapter des applications sur un ensemble de supports (embarqué, web, mobile, IoT...).
-                    </p>
-                  </li>
-                </ul>
-              </a>
-            </li>
-            <li class="skill">
-              <a href="#projets" class="skill-btn">
-                <h2>Optimiser</h2>
-                <ul class="levels">
-                  <li>
-                    <h3>Niveau 1 :</h3>
-                    <p>
-                      Appréhender et construire des algorithmes.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>Niveau 2 :</h3>
-                    <p>
-                      Sélectionner les algorithmes adéquats pour répondre à un problème donné.
-                    </p>
-                  </li>
-                </ul>
-              </a>
-            </li>
-            <li class="skill">
-              <a href="#projets" class="skill-btn">
-                <h2>Administrer</h2>
-                <ul class="levels">
-                  <li>
-                    <h3>Niveau 1 :</h3>
-                    <p>
-                      Installer et configurer un poste de travail.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>Niveau 2 :</h3>
-                    <p>
-                      Déployer des services dans une architecture réseau.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>Niveau 3 :</h3>
-                    <p>
-                      Faire évoluer et maintenir un système informatique communiquant en conditions opérationnelles.
-                    </p>
-                  </li>
-                </ul>
-              </a>
-            </li>
-            <li class="skill">
-              <a href="#projets" class="skill-btn">
-                <h2>Gérer</h2>
-                <ul class="levels">
-                  <li>
-                    <h3>Niveau 1 :</h3>
-                    <p>
-                      Concevoir et mettre en place une base de données à partir d’un cahier des charges client.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>Niveau 2 :</h3>
-                    <p>
-                      Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité.
-                    </p>
-                  </li>
-                </ul>
-              </a>
-            </li>
-            <li class="skill">
-              <a href="#projets" class="skill-btn">
-                <h2>Conduire</h2>
-                <ul class="levels">
-                  <li>
-                    <h3>Niveau 1 :</h3>
-                    <p>
-                      Identifier les besoins métiers des clients et des utilisateurs.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>Niveau 2 :</h3>
-                    <p>
-                      Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs.
-                    </p>
-                  </li>
-                </ul>
-              </a>
-            </li>
-            <li class="skill">
-              <a href="#projets" class="skill-btn">
-                <h2>Collaborer</h2>
-                <ul class="levels">
-                  <li>
-                    <h3>Niveau 1 :</h3>
-                    <p>
-                      Identifier ses aptitudes pour travailler dans une équipe.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>Niveau 2 :</h3>
-                    <p>
-                      Situer son rôle et ses missions au sein d’une équipe informatique.
-                    </p>
-                  </li>
-                  <li>
-                    <h3>Niveau 3 :</h3>
-                    <p>
-                      Manager une équipe informatique.
-                    </p>
-                  </li>
-                </ul>
-              </a>
-            </li>
-        </ul>
-    </section>
+    </div>
 
-    <section id="outils">
-      <span>Outils</span>
-      <ul>
-        <li class="tool">
-          <h2>Programmation</h2>
-          <ul>
-            <li>
-              <h3>Orienté objet</h3>
-              <ul>
-                <li>
-                  Java
-                </li>
-                <li>
-                  C#
-                </li>
-              </ul>
-            </li>
-            <li>
-              <h3>Web</h3>
-              <ul>
-                <li>
-                  CSS
-                </li>
-                <li>
-                  PHP
-                </li>
-                <li>
-                  HTML
-                </li>
-                <li>
-                  JavaScript
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="tool">
-          <h2>Système & réseau</h2>
-          <ul>
-            <li>
-              <h3>Virtualisation</h3>
-              <ul>
-                <li>
-                  PROXMOX
-                </li>
-                <li>
-                  VirtualBox
-                </li>
-                <li>
-                  VMWare
-                </li>
-              </ul>
-            </li>
-            <li>
-              <h3>Réseau</h3>
-              <ul>
-                <li>
-                  Cisco
-                </li>
-                <li>
-                  Cisco packet tracer
-                </li>
-              </ul>
-            </li>
-            <li>
-              <h3>Système</h3>
-              <ul>
-                <li>
-                  Linux
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="tool">
-          <h2>Base de données</h2>
-          <ul>
-            <li>
-              <h3>NoSQL</h3>
-              <ul>
-                <li>
-                  MongoDB
-                </li>
-                <li>
-                  NoSQL
-                </li>
-              </ul>
-            </li>
-            <li>
-              <h3>Modelisation MLD (Modele logique de données)</h3>
-              <ul>
-                <li>
-                  Looping
-                </li>
-              </ul>
-            </li>
-            <li>
-              <h3>SQL</h3>
-              <ul>
-                <li>
-                  SQL
-                </li>
-                <li>
-                  Oracle Database (PL/SQL)
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+</section>
 
-    <section id="projets">
-      <span>Projets</span>
-      <ul>
-        <li>
-          <h2>Déploiement d'une infrastructure</h2>
-          <ul>
-            <li>
-              Administration de machines virtuelles sous PROXMOX
-            </li>
-            <li>
-              Configuration et gestion de services informatiques (DHCP, DNS, Mail server, FTP server)
-            </li>
-            <li>
-              Automatisation du déploiement de l'infrastructure réseau
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+<section class="section">
 
-    <section id="contact">
-      <span>Me contacter</span>
-      <div class="d-flex contact">
-        <div>
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/link-henek-a90b0a327/">LinkedIn</a>
-            </li>
-            <li>
-              <h3>06 52 71 39 81</h3>
-            </li>
-          </ul>
+    <div class="container">
+
+        <h2>Compétences</h2>
+
+        <div class="skills">
+
+            <span>C#</span>
+            <span>ASP.NET Core</span>
+            <span>Entity Framework</span>
+            <span>Blazor</span>
+            <span>SQL Server</span>
+            <span>Docker</span>
+            <span>Git</span>
+            <span>Azure</span>
+            <span>Linux</span>
+            <span>JavaScript</span>
+
         </div>
-        <div>
-          <p class="m-auto">
-            Je reste contactable facilement par mail.
-            En espérant recevoir l'un de vos mails.
-          </p>
-        </div>
-        <div>
-          <div class="m-auto">
-            <a style="margin:0" href="mailto:link.henek@gmail.com">M'écrire</a>
-          </div>
-        </div>
-      </div>   
-    </section>
-  </main>
 
-  <footer>
-    <p>
-      © 2026 — Link HENEK
-      <br>
-      Tous droits réservés.
-    </p>
-  </footer>
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <h2>Quelques projets</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+
+                <h3>CookBook</h3>
+
+                <p>
+                    Application web de gestion de recettes avec authentification,
+                    recherche et gestion des favoris.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>DevOps Dashboard</h3>
+
+                <p>
+                    Interface de supervision de pipelines CI/CD et
+                    déploiements automatisés.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Portfolio</h3>
+
+                <p>
+                    Site personnel présentant mon parcours et mes projets.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <h2>Au-delà du CV</h2>
+
+        <p>
+            J'apprécie particulièrement la conception de logiciels propres,
+            les architectures bien pensées et les problématiques DevOps.
+            J'aime comprendre les besoins métiers afin de proposer des
+            solutions simples, évolutives et faciles à maintenir.
+        </p>
+
+    </div>
+
+</section>
+
+<footer id="contact">
+
+    <div class="container">
+
+        <h2>Contact</h2>
+
+        <p>john.doe@email.com</p>
+
+        <p>LinkedIn • GitHub</p>
+
+    </div>
+
+</footer>
 
 </body>
 </html>
